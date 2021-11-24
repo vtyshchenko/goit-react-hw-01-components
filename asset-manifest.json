@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/vtyshchenko/goit-react-hw-01-components/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/vtyshchenko/goit-react-hw-01-components/static/js/main.f397b8d4.chunk.js",
+    "main.js.map": "/vtyshchenko/goit-react-hw-01-components/static/js/main.f397b8d4.chunk.js.map",
+    "runtime-main.js": "/vtyshchenko/goit-react-hw-01-components/static/js/runtime-main.9ea09449.js",
+    "runtime-main.js.map": "/vtyshchenko/goit-react-hw-01-components/static/js/runtime-main.9ea09449.js.map",
+    "static/js/2.a69398eb.chunk.js": "/vtyshchenko/goit-react-hw-01-components/static/js/2.a69398eb.chunk.js",
+    "static/js/2.a69398eb.chunk.js.map": "/vtyshchenko/goit-react-hw-01-components/static/js/2.a69398eb.chunk.js.map",
+    "static/js/3.4faad408.chunk.js": "/vtyshchenko/goit-react-hw-01-components/static/js/3.4faad408.chunk.js",
+    "static/js/3.4faad408.chunk.js.map": "/vtyshchenko/goit-react-hw-01-components/static/js/3.4faad408.chunk.js.map",
+    "index.html": "/vtyshchenko/goit-react-hw-01-components/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/vtyshchenko/goit-react-hw-01-components/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.a69398eb.chunk.js.LICENSE.txt": "/vtyshchenko/goit-react-hw-01-components/static/js/2.a69398eb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ea09449.js",
+    "static/js/2.a69398eb.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f397b8d4.chunk.js"
+  ]
+}
