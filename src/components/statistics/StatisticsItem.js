@@ -1,17 +1,41 @@
+import { clearConfigCache } from "prettier";
 import PropTypes from "prop-types";
 
-const StatisticsItem = ({ title, stats }) => {
+import styles from "./StatisticsItem.module.scss";
+
+const StatisticsItem = ({ stats }) => {
   return (
-    <li className="item">
-      <span className="label">{title}</span>
-      <span className="percentage">{stats}%</span>
-    </li>
+    <ul className={styles.list}>
+      {stats.map((statInfo) => (
+        <li
+          key={statInfo.id}
+          className={styles.item}
+          style={{
+            backgroundColor: getRGB(),
+            width: `calc(100%/${stats.length})`,
+          }}
+        >
+          <span className={styles.label}>{statInfo.label}</span>
+          <span className={styles.percentage}>{statInfo.percentage}%</span>
+        </li>
+      ))}
+    </ul>
   );
 };
 
-StatisticsItem.propTypes = {
-  title: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
+StatisticsItem.defaultProps = {
+  stats: [],
 };
+
+StatisticsItem.propTypes = {
+  stats: PropTypes.array.isRequired,
+};
+
+function getRGB() {
+  const r = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
 
 export default StatisticsItem;

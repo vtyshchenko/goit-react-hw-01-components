@@ -1,0 +1,20 @@
+.statistics {
+  text-align: center;
+  border: 2px solid #797979;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: 300px;
+  -webkit-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.3);
+  -moz-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.3);
+  box-shadow: 13px 10px 16px 10px rgba(75, 75, 75, 0.3);
+}
+
+.title {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #797979;
+  text-transform: uppercase;
+}

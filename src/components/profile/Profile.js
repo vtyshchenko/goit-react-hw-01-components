@@ -4,7 +4,7 @@ import ProfileStats from './ProfileStats';
 
 const Profile = ({ avatar, name, tag, location, statistics }) => {
   return (
-    <div className={styles.profile}>
+    <section className={styles.profile}>
       <div className={styles.description}>
         <img src={avatar} alt={name} className={styles.avatar} />
         <p className={styles.name}>{name}</p>
@@ -14,7 +14,7 @@ const Profile = ({ avatar, name, tag, location, statistics }) => {
 
       <ProfileStats statistics={statistics}/>
 
-    </div>
+    </section>
   );
 };
 

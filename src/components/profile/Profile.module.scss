@@ -2,11 +2,12 @@
   display: block;
   margin: 20px auto 0 auto;
   width: 300px;
-  border: 2px solid gray;
+  border: 2px solid #797979;
   border-radius: 5px;
-  -webkit-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.2);
-  -moz-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.2);
-  box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.2);
+  margin-bottom: 20px;
+  -webkit-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.3);
+  -moz-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.3);
+  box-shadow: 13px 10px 16px 10px rgba(75, 75, 75, 0.3);
 }
 
 .description {

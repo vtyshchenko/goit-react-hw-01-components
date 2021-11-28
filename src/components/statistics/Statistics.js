@@ -1,23 +1,23 @@
 import PropTypes from "prop-types";
 import StatisticsItem from "./StatisticsItem.js";
+import styles from './Statistics.module.scss';
 
 const Statistics = ({ title, stats }) => {
-  return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
 
-      <ul className="stat-list">
-        {stats.map((statInfo) => (
-          <StatisticsItem
-            key={statInfo.id}
-            title={statInfo.label}
-            stats={statInfo.percentage}
-          />
-        ))}
-      </ul>
+  return (
+    <section className={styles.statistics}>
+      <h2 className={styles.title}>{title}</h2>
+
+      <StatisticsItem stats={stats}/>
+
     </section>
   );
 };
+
+Statistics.defaultProps = {
+  title: "",
+  stats: [],
+}
 
 Statistics.propTypes = {
   title: PropTypes.string,
