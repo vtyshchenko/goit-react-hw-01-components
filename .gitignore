@@ -112,3 +112,4 @@ orig/
 *old.*
 *buckup.*
 ~*
+node_modules/
