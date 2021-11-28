@@ -1,0 +1,45 @@
+.profile {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 300px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  -webkit-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.2);
+  -moz-box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.2);
+  box-shadow: 13px 6px 16px 10px rgba(75, 75, 75, 0.2);
+}
+
+.description {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  display: block;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 40px auto 30px auto;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 10px 0;
+}
+
+.tag {
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  margin: 0 0 10px 0;
+}
+
+.location {
+  font-size: 16px;
+  text-align: center;
+  color: #797979;
+  margin: 0;
+}

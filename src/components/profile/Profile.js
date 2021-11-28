@@ -1,32 +1,29 @@
 import PropTypes from "prop-types";
+import styles from './Profile.module.scss';
+import ProfileStats from './ProfileStats';
 
 const Profile = ({ avatar, name, tag, location, statistics }) => {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt={name} class="avatar" />
-        <p class="name">{name}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+    <div className={styles.profile}>
+      <div className={styles.description}>
+        <img src={avatar} alt={name} className={styles.avatar} />
+        <p className={styles.name}>{name}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity"> {statistics.followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity"> {statistics.views}</span>
-        </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity"> {statistics.likes}</span>
-        </li>
-      </ul>
+      <ProfileStats statistics={statistics}/>
+
     </div>
   );
 };
+
+Profile.defaultProps = {
+  name: "no name",
+  avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+  tag: 'no tag',
+  location: 'no location',
+}
 
 Profile.propTypes = {
   avatar: PropTypes.string,
