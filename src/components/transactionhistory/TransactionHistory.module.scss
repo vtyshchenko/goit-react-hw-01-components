@@ -1,25 +1,27 @@
+@import "../variables.scss";
+
 .transactionHistory {
   margin: 0 auto;
-  width: 320px;
-  border: 2px solid #797979;
+  width: $width;
+  border: 2px solid $main-border-color;
   border-radius: 5px;
 
-  -webkit-box-shadow: 13px 5px 10px 3px rgba(75, 75, 75, 0.3);
-  -moz-box-shadow: 13px 5px 10px 3px rgba(75, 75, 75, 0.3);
-  box-shadow: 13px 5px 10px 3px rgba(75, 75, 75, 0.3);
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
 }
 
 .tableHeader {
   text-transform: uppercase;
   width: calc(100% / 3);
   text-align: center;
-  background-color: #9cd9d3;
+  background-color: $transaction-hystory-head-table-background;
 }
 
 .tableRow {
-  background-color: #d1e3ff;
+  background-color: $main-background-color;
 }
 
 .tableRow:nth-of-type(2n + 1) {
-  background-color: #ffffff;
+  background-color: $statistics-text-color;
 }

@@ -3,6 +3,8 @@ import Statistics from "./components/statistics/Statistics";
 import FriendList from "./components/friendlist/FriendList";
 import TransactionHistory from "./components/transactionhistory/TransactionHistory";
 
+import "./App.scss";
+
 import user from "./data/user.json";
 import data from "./data/data.json";
 import friends from "./data/friends.json";

@@ -1,5 +1,7 @@
+@import "./components/variables.scss";
+
 .App {
-  background-color: #75bb85;
+  background-color: $main-background-color;
 }
 
 .App-logo {
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $main-background-color;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

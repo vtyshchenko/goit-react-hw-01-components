@@ -1,16 +1,17 @@
+@import "../variables.scss";
+
 .profile {
   display: block;
   margin: 20px auto;
-  width: 300px;
-  border: 2px solid #797979;
+  width: $width;
+  border: 2px solid $main-border-color;
   border-radius: 5px;
-  background-color: #d1e3ff;
+  background-color: $main-background-color;
 
-  -webkit-box-shadow: 13px 5px 10px 3px rgba(75, 75, 75, 0.3);
-  -moz-box-shadow: 13px 5px 10px 3px rgba(75, 75, 75, 0.3);
-  box-shadow: 13px 5px 10px 3px rgba(75, 75, 75, 0.3);
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
 }
-
 .description {
   width: 100%;
   margin-bottom: 30px;
@@ -19,7 +20,7 @@
 .avatar {
   display: block;
   background-color: #ffffe6;
-  border: 2px #797979 solid;
+  border: 2px $main-border-color solid;
   border-radius: 50%;
   width: 90px;
   height: 90px;
@@ -30,21 +31,21 @@
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  color: #000000;
+  color: $name-text-color;
   margin: 0 0 10px 0;
 }
 
 .tag {
   font-size: 16px;
   text-align: center;
-  color: #797979;
+  color: $main-border-color;
   margin: 0 0 10px 0;
 }
 
 .location {
   font-size: 16px;
   text-align: center;
-  color: #797979;
+  color: $main-border-color;
   margin: 0;
 }
 
@@ -53,7 +54,7 @@
   flex-wrap: wrap;
   width: 100%;
   height: 90px;
-  border-top: 2px solid #d2d2d2;
+  border-top: 2px solid $secondary-border-color;
 }
 
 .item {
@@ -66,5 +67,5 @@
 }
 
 .item:not(:last-child) {
-  border-right: 2px solid #d2d2d2;
+  border-right: 2px solid $secondary-border-color;
 }
