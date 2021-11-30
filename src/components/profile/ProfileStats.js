@@ -1,26 +1,16 @@
 import PropTypes from "prop-types";
 import styles from "./ProfileStats.module.scss";
 
-const ProfileStats = ({ statistics }) => {
-  const keys = Object.keys(statistics);
+export default function ProfileStats({ title, value }) {
   return (
-    <ul className={styles.stats}>
-      {keys.map((keyStat) => (
-        <li key={keyStat} className={styles.item}>
-          <span className={styles.label}>{keyStat}</span>
-          <span className={styles.quantity}> {statistics[keyStat]}</span>
-        </li>
-      ))}
-    </ul>
+    <>
+      <span className={styles.label}>{title}</span>
+      <span className={styles.quantity}> {value}</span>
+    </>
   );
-};
-
-ProfileStats.defaultProps = {
-  statistics: {},
 }
 
 ProfileStats.propTypes = {
-  statistics: PropTypes.object,
+  title: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
 };
-
-export default ProfileStats;

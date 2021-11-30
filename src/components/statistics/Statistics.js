@@ -1,27 +1,47 @@
 import PropTypes from "prop-types";
 import StatisticsItem from "./StatisticsItem.js";
-import styles from './Statistics.module.scss';
+import styles from "./Statistics.module.scss";
 
-const Statistics = ({ title, stats }) => {
-
+export default function Statistics({ title, stats }) {
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>{title}</h2>
+      {title && <h2 className={styles.title}>{title}</h2>}
 
-      <StatisticsItem stats={stats}/>
-
+      <ul className={styles.list}>
+        {stats.map((statInfo) => (
+          <li
+            key={statInfo.id}
+            className={styles.item}
+            style={{
+              backgroundColor: getRGB(),
+              width: `calc(100%/${stats.length})`,
+            }}
+          >
+            <StatisticsItem
+              label={statInfo.label}
+              percentage={statInfo.percentage}
+            />
+          </li>
+        ))}
+      </ul>
     </section>
   );
-};
+}
 
 Statistics.defaultProps = {
   title: "",
-  stats: [],
-}
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string.isRequired })
+  ),
 };
 
-export default Statistics;
+function getRGB() {
+  const r = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}
