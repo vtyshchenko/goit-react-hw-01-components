@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import styles from "./ProfileStats.module.scss";
+import PropTypes from 'prop-types';
+import styles from './ProfileStats.module.scss';
 
 export default function ProfileStats({ title, value }) {
   return (
